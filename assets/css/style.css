@@ -1,3 +1,48 @@
-h1{
-  color: aqua;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
 }
+
+body{
+  margin: 30px;
+}
+
+.bg-info{
+  text-align: center;
+  padding: 5rem;
+}
+
+ul{
+  list-style-type: none;
+
+}
+
+hr{
+  border: 1px solid hsl(57, 91%, 53%);
+}
+
+h3{
+  background: hsl(55, 89%, 72%);
+  display: inline-block;
+  padding: 15px;
+  -webkit-box-shadow: 0.5px 0.5px 5px 0.1px black;  
+  box-shadow:         0.5px 0.5px 5px 0.1px black; 
+  
+}
+
+ /* Setting height for card */
+
+ .card img{
+  height: 400px;
+ }
+
+ .card h4{
+   text-align: center;
+   font-family: sans-serif;
+ }
+
+ /* will hide the card group when the page loads  */
+ .card-group{
+   display: none;
+ }

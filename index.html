@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>RPS Game</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Our CSS  -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <h1>hello</h1>
-  
+  <div class="container-fluid">
+    <div id="rpsJumbo" class="jumbotron bg-info">
+      <h1>Welcome to Bootstrap Rock Paper Scissors!</h1>
+      <hr>
+      <h2>These are the rules.</h2>
+      <ul>
+        <li>ROCK: Wins against <strong>scissors</strong> and rock loses against <strong>paper</strong>.</li>
+        <li>PAPER: Wins against <strong>rock</strong> and paper loses against <strong>scissors</strong>.</li>
+        <li>SCISSORS: Wins against <strong>paper</strong> and rock loses against <strong>rock</strong>.</li>
+      </ul>
+      <hr>
+      <h3>Press R, P, or S to get started.</h3>
+    </div>
+
+    <!-- Game board view -->
+    <div id="rps-card" class="card-group">
+      <!-- Card 1 -->
+      <div class="card">
+        <h4>User Choice</h4>
+        <hr>
+        <img src="https://www.colourbox.com/preview/8093016-hand-sign-of-rock-paper-scissors-game-isolated-vector-on-white-background.jpg" alt="rps">
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <h4>Current Score</h4>
+        <hr>
+        <p>Wins: <span class="winCount"><strong>0</strong></span></p>
+        <p>Loses: <span class="loseCount"><strong>0</strong></span></p>
+        <p>Tied: <span class="tieCount"><strong>0</strong></span></p>
+
+        <img src="" alt="">
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <h4>Computer Choice</h4>
+        <hr>
+        <img src="https://www.colourbox.com/preview/8093016-hand-sign-of-rock-paper-scissors-game-isolated-vector-on-white-background.jpg" alt="rps">
+      </div>
+    </div>
+  </div>
+
 
 
   <script src="assets/js/rps.js"></script>
 </body>
+
 </html>
